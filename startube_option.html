@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTUBE｜AQUARAMA</title>
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/include.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- Include header -->
+        <div class="header-include"></div>
+        <!-- // Include header -->
+
+        <div id="option_content" class="content">
+            <form>
+                <div class="logoImg">
+                    <img src="images/startube/Startube_logo.png" alt="Startube logo">
+                </div>
+                <div class="total">
+                    <input type="text" name="result" value="190,000,000"/> <em>KRW</em>
+                    <p>※ 운임, 환률에 따라 상세 견적은 문의 바랍니다.※</p>
+                </div>
+                <div class="tableImg swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/startube/STARTUBE_white.jpg" alt="STARTUBE_white">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/startube/STARTUBE_yellow.jpg" alt="STARTUBE_yellow">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/startube/STARTUBE_red.jpg" alt="STARTUBE_red">
+                        </div>
+                    </div>
+                    <h4>Model Color</h4>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <table class="op_table">
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">기본옵션</td>
+                            <td><img src="images/옵션별 이미지/startube/카라이트 소재 브러시 시스템.jpg" alt="카라이트 소재 브러시 시스템"></td>
+                            <td>
+                                카라이트 소재 브러시 시스템<br>
+                                (루프 1EA+사이드 2SET)
+                            </td>
+                            <td rowspan="4">190,000,000</td>
+                            <td rowspan="4"><input type="checkbox" name="checkbox" value="190000000" id="checkbox1" onclick="calc( this );" checked="checked" disabled="disabled"/><label for="checkbox1"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/startube/건조기 시스템.jpg" alt="건조기 시스템"></td>
+                            <td>건조기 시스템 (2SET)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/startube/기능 아치 시스템.jpg" alt="기능 아치 시스템"></td>
+                            <td>
+                                기능 아치 시스템<br>
+                                (폼 1EA+왁스 1EA+건조제 1EA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/startube/출구용 traffic light.jpg" alt="출구용 traffic light"></td>
+                            <td>출구용 Traffic Light</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">선택옵션</td>
+                            <td><img src="images/옵션별 이미지/startube/루프 고압 살수.jpg" alt="루프 고압 살수"></td>
+                            <td>루프 고압 살수</td>
+                            <td>+10,000,000</td>
+                            <td><input type="checkbox" name="checkbox" value="10000000" id="checkbox2" onclick="calc( this );"/><label for="checkbox2"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/startube/휠 고압 살수.jpg" alt="휠 고압 살수"></td>
+                            <td>휠 고압 살수</td>
+                            <td>+8,500,000</td>
+                            <td><input type="checkbox" name="checkbox" value="8500000" id="checkbox3" onclick="calc( this );"/><label for="checkbox3"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/startube/하부 세차.jpg" alt="하부세차"></td>
+                            <td>하부 세차</td>
+                            <td>+7,000,000</td>
+                            <td><input type="checkbox" name="checkbox" value="7000000" id="checkbox5" onclick="calc( this );"/><label for="checkbox5"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/startube/동파 방지 시스템.jpg" alt="동파방지 시스템"></td>
+                            <td>동파방지 시스템</td>
+                            <td>+1,500,000</td>
+                            <td><input type="checkbox" name="checkbox" value="1500000" id="checkbox6" onclick="calc( this );"/><label for="checkbox6"></label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="add">
+                    부가세 별도<br>
+                    토목 공사 비용은 별도이며 환율 변동, 수입 비용 등에 따라 비용은 변동될 수 있습니다.<br>
+                    상세 견적은 담당자에게 연락주시기 바랍니다.
+                </p>
+            </form>
+        </div>
+
+        <!-- Include footer -->
+        <div class="footer-include"></div>
+        <!-- // Include footer -->
+    </div>
+</body>
+</html>

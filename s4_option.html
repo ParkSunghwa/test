@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4｜AQUARAMA</title>
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/include.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- Include header -->
+        <div class="header-include"></div>
+        <!-- // Include header -->
+
+        <div id="option_content" class="content">
+            <form>
+                <div class="logoImg">
+                    <img src="images/s4/S4_logo.png" alt="s4 logo">
+                </div>
+                <div class="total">
+                    <input type="text" name="result" value="68,000,000"/> <em>KRW</em>
+                    <p>※ 운임, 환률에 따라 상세 견적은 문의 바랍니다.※</p>
+                </div>
+
+                <div class="tableImg swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/s4/S4_white.jpg" alt="S4_white">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/s4/S4_yellow.jpg" alt="S4_yellow">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/s4/S4_red.jpg" alt="S4_red">
+                        </div>
+                    </div>
+                    <h4>Model Color</h4>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <table class="op_table">
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">기본옵션</td>
+                            <td></td>
+                            <td>사이드 브러시</td>
+                            <td rowspan="5">68,000,000</td>
+                            <td rowspan="5"><input type="checkbox" name="checkbox" value="68000000" id="checkbox1" onclick="calc( this );" checked="checked" disabled="disabled"/><label for="checkbox1"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/S4/사이드 건조기.jpg" alt="사이드 건조기"></td>
+                            <td>사이드 건조기</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/S4/왁스 분사.jpg" alt="왁스 분사"></td>
+                            <td>왁스 분사</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/S4/traffic light.jpg" alt="Traffic light"></td>
+                            <td>Traffic Light</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/S4/제어용 터치패널.jpg" alt="제어용 터치패널"></td>
+                            <td>제어용 터치패널</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">선택옵션</td>
+                            <td><img src="images/옵션별 이미지/S4/카라이트 소재 브러시.png" alt="카라이트 소재 브러시"></td>
+                            <td>카라이트 소재 브러시</td>
+                            <td>+5,000,000</td>
+                            <td><input type="checkbox" name="checkbox" value="5000000" id="checkbox2" onclick="calc( this );"/><label for="checkbox2"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/S4/휠브러시.jpg" alt="휠 브러시"></td>
+                            <td>휠 브러시</td>
+                            <td>+3,000,000</td>
+                            <td><input type="checkbox" name="checkbox" value="3000000" id="checkbox3" onclick="calc( this );"/><label for="checkbox3"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/S4/건조기 tilt flap.png" alt="건조기 tilt flap"></td>
+                            <td>건조기 Tilt Flap</td>
+                            <td>+1,000,000</td>
+                            <td><input type="checkbox" name="checkbox" value="1000000" id="checkbox4" onclick="calc( this );"/><label for="checkbox4"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/S4/사이드 건조기.jpg" alt="사이드 건조기"></td>
+                            <td>하부세차</td>
+                            <td>+5,000,000</td>
+                            <td><input type="checkbox" name="checkbox" value="5000000" id="checkbox5" onclick="calc( this );"/><label for="checkbox5"></label></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/옵션별 이미지/S4/사이드 고압 살수.jpg" alt="사이드 고압 살수"></td>
+                            <td>사이드 고압 살수</td>
+                            <td>+4,000,000</td>
+                            <td><input type="checkbox" name="checkbox" value="4000000" id="checkbox6" onclick="calc( this );"/><label for="checkbox6"></label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="add">
+                    부가세 별도<br>
+                    토목 공사 비용은 별도이며 환율 변동, 수입 비용 등에 따라 비용은 변동될 수 있습니다.<br>
+                    상세 견적은 담당자에게 연락주시기 바랍니다.
+                </p>
+            </form>
+        </div>
+
+        <!-- Include footer -->
+        <div class="footer-include"></div>
+        <!-- // Include footer -->
+    </div>
+</body>
+</html>

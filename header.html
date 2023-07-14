@@ -1,0 +1,29 @@
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="images/logo1.png" alt="logo"></a>
+    </div>
+    <nav>
+        <ul class="nav">
+            <li><a href="about.html">회사소개</a></li>
+            <li><a href="#a">제품/견적</a>
+                <ul class="submenu">
+                    <li><a href="product.html">ALL</a></li>
+                    <li><a href="s4.html">S4</a></li>
+                    <li><a href="s6.html">S6</a></li>
+                    <li><a href="startube.html">STARTUBE</a></li>
+                    <li><a href="#a">STAR TRUCK</a></li>
+                    <li><a href="carcare.html">CAR CARE</a></li>
+                </ul>
+            </li>
+            <li><a href="rohecare.html">로희케어</a></li>
+            <li><a href="support.html">고객지원</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    // header submenu click
+    $(".nav li").click(function(){
+    	$(this).find(".submenu").toggleClass("on");
+    });
+</script>
